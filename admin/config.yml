@@ -1,6 +1,5 @@
 backend:
-  name: github
-  repo: Noctrow/test  # ← reemplaza con tu usuario y repo real
+  name: git-gateway
   branch: main
 
 media_folder: "assets/img"

@@ -1,20 +1,22 @@
-CMS.init({
+window.addEventListener("load", () => {
+  CMS.init({
     config: {
       backend: {
         name: "github",
-        repo: "TU_USUARIO/TU_REPO",
+        repo: "Noctrow/test", // ← remplaza esto por tu usuario y repo real
         branch: "main",
       },
-      media_folder: "assets/img",
-      public_folder: "/assets/img",
+      media_folder: "assets/img",       // Carpeta interna donde se guardan las imágenes
+      public_folder: "/assets/img",     // Ruta accesible públicamente
       publish_mode: "editorial_workflow",
+
       collections: [
         {
           name: "posts",
           label: "Posts",
-          folder: "evento",
+          folder: "evento",                // Carpeta donde se guardarán los posts
           create: true,
-          slug: "{{slug}}/index",
+          slug: "{{slug}}/index",          // Para usar URLs tipo /evento/nombre-del-post/
           extension: "html",
           format: "frontmatter",
           preview: false,
@@ -29,4 +31,5 @@ CMS.init({
         }
       ]
     }
-  });  
+  });
+});

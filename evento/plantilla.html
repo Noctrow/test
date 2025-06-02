@@ -1,0 +1,26 @@
+---
+title: Título del post
+description: Breve resumen
+date: 2025-04-16
+category: evento
+thumbnail: /assets/img/ejemplo.jpg
+---
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ title }}</title>
+</head>
+<body>
+  <h1>{{ title }}</h1>
+  <p><strong>Fecha:</strong> {{ date }}</p>
+  <p><strong>Categoría:</strong> {{ category }}</p>
+  <img src="{{ thumbnail }}" alt="Portada">
+  <p>{{ description }}</p>
+  <div>
+    {{ body }}
+  </div>
+</body>
+</html>
+

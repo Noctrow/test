@@ -6,7 +6,10 @@
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
   </head>
   <body>
-    <!-- Esto carga automáticamente config.yml sin necesidad de init manual -->
+    <!-- Contenedor requerido por Decap CMS -->
+    <div id="nc-root"></div>
+
+    <!-- Esta línea es opcional si usás config.yml -->
     <script>
       window.CMS_MANUAL_INIT = false;
     </script>
